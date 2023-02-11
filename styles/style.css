@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:ital@1&family=Poppins&display=swap');
+
+body {
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.imgWeather {
+    width: 100px;
+    height: auto;
+}
+
+body {
+    background-image: url('/images/background.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header {
+    margin-top: 200px;
+    font-size: 1.5rem;
+    color:white;
+    text-shadow: 3px 0px 7px rgba(81,67,21,0.8), 
+    -3px 0px 7px rgba(81,67,21,0.8), 
+    0px 4px 7px rgba(81,67,21,0.8); 
+}
+
+.title {
+    display: flex;
+    margin: 0 auto;
+    text-align: end;
+}
+
+.title h4 {
+    margin: 2px 10px;
+}
