@@ -17,8 +17,8 @@ body {
 }
 
 header {
-    margin-top: 200px;
-    font-size: 1.5rem;
+    margin-top: 100px;
+    font-size: 1.8rem;
     color:white;
     text-shadow: 3px 0px 7px rgba(81,67,21,0.8), 
     -3px 0px 7px rgba(81,67,21,0.8), 
@@ -27,10 +27,24 @@ header {
 
 .title {
     display: flex;
-    margin: 0 auto;
-    text-align: end;
+    align-items:last baseline;
+    justify-content: center;
+    gap: 10px;
 }
 
-.title h4 {
-    margin: 2px 10px;
+h1, h2, h3, h4 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.cursive {
+    font-family: 'Playfair Display', serif;
+}
+
+h6 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    color:white;
+    text-shadow: 3px 0px 7px rgba(81,67,21,0.8), 
+    -3px 0px 7px rgba(81,67,21,0.8), 
+    0px 4px 7px rgba(81,67,21,0.8); 
 }
