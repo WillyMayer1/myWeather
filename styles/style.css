@@ -1,0 +1,11 @@
+#weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grades {
+    display: flex;
+    gap: 10px;
+    align-items: end;
+}
