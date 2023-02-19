@@ -1,6 +1,8 @@
 //API key 9190bb933797474888f193203231902
 
-const url = 'http://api.weatherapi.com/v1/current.json?key=9190bb933797474888f193203231902&q=auto:ip';
+const idLoc = document.querySelector('.loc');
+let enterLoc = 'Mendoza';
+const url = `http://api.weatherapi.com/v1/current.json?key=9190bb933797474888f193203231902&q=${enterLoc}`;
 const idWeather = document.querySelector('#weather');
 
 async function callWeather() {

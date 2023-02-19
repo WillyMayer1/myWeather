@@ -21,5 +21,5 @@ async function callForecast() {
 
 
 function displayForecast(data) {
-    console.log(data);
+
 }

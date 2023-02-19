@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+body {
+    background-color: #0077b6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
 #weather {
     display: flex;
     flex-direction: column;
