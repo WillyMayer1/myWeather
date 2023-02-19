@@ -21,20 +21,34 @@ async function callForecast() {
 
 
 function displayForecast(data) {
-  console.log(data.forecast);
-  data.forecastday.forEach((forecasts) => {
+
+  const eachDayTitle = document.createElement('h2');
+  const forecastInfo = document.createElement('div');
+
+  eachDayTitle.textContent = 'Forecast to the next days';
+  forecastInfo.className = 'forecast-info';
+
+  idForecast.appendChild(eachDayTitle);
+
+  data.forecast.forecastday.forEach((forecasts) => {
 
     console.log(forecasts);
     const img = document.createElement('img');
+    const grades = document.createElement('div');
     const celsius = document.createElement('h2');
     const fahr = document.createElement('h4');
+    const eachDay = document.createElement('section');
 
     img.src = forecasts.day.condition.icon;
-    celsius.textContent = data.day.avgtemp_c + ' ºC';
-    fahr.textContent = data.day.avgtemp_f + ' ºF';
+    grades.className = 'grades';
+    celsius.textContent = forecasts.day.avgtemp_c + ' ºC';
+    fahr.textContent = forecasts.day.avgtemp_f + ' ºF';
 
-    idWeather.appendChild(img);
+    eachDay.appendChild(img);
     grades.appendChild(celsius);
     grades.appendChild(fahr);
-  })
+    eachDay.appendChild(grades);
+    forecastInfo.appendChild(eachDay);
+    idForecast.appendChild(forecastInfo);
+  });
 }
