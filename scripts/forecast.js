@@ -32,7 +32,6 @@ function displayForecast(data) {
 
   data.forecast.forecastday.forEach((forecasts) => {
 
-    console.log(forecasts);
     const img = document.createElement('img');
     const grades = document.createElement('div');
     const celsius = document.createElement('h2');

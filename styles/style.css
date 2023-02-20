@@ -16,6 +16,10 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
 }
 
+.desc-weather {
+    margin: 20px auto -18px;
+}
+
 .grades {
     display: flex;
     gap: 10px;
@@ -32,4 +36,9 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     margin-top: 50px;
     gap: 200px;
+}
+
+form {
+    text-align: center;
+    margin: 50px auto 10px;
 }
