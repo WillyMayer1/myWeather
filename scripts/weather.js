@@ -3,7 +3,9 @@
 //const idLoc = document.querySelector('.loc');
 //let enterLoc = 'Mendoza';
 
-const url = `http://api.weatherapi.com/v1/current.json?key=9190bb933797474888f193203231902&q=Santiago`;
+let inputLoc = 'Limache';
+const url = `http://api.weatherapi.com/v1/current.json?key=9190bb933797474888f193203231902&q=${inputLoc}`;
+
 const idWeather = document.querySelector('#weather');
 const bodySelect = document.querySelector('body');
 
